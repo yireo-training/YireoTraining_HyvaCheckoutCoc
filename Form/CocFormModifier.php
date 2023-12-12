@@ -9,9 +9,8 @@ class CocFormModifier
     public function execute(EntityFormInterface $form)
     {
         $cocField = $form->getField('coc');
-        //$cocField->setData('class_element', ["bg-[#ffcc00]"]);
-        $cocField->setData('class_element', ["bg-orange-200"]);
-        $cocField->setData('class_wrapper', ["relative before:content-['Hello_World'] before:absolute before:top-0 before:left-0"]);
-
+        $cocField->setData('class_element', ["var(--field-coc-element)"]);
+        $cocField->setData('class_wrapper', ["var(--field-coc-wrapper)"]);
+        $cocField->setAttribute('placeholder', 'Chamber of Commerce number');
     }
 }
