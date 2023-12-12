@@ -32,7 +32,6 @@ class AddCocFieldToCustomerAddress implements DataPatchInterface
 
     public function apply()
     {
-
         $attributeCode = 'coc';
         $attributeLabel = 'CoC';
 
