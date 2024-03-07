@@ -12,5 +12,9 @@ class CocFormModifier
         if (empty($cocField)) {
             return;
         }
+
+        $cocField->setData('class_element', ["var(--field-coc-element)"]);
+        $cocField->setData('class_wrapper', ["var(--field-coc-wrapper)"]);
+        $cocField->setAttribute('placeholder', 'Chamber of Commerce number');
     }
 }
