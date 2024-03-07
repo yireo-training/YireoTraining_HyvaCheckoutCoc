@@ -6,5 +6,4 @@
         <observer name="Yireo_HyvaCheckoutCoc"
                   instance="Yireo\HyvaCheckoutCoc\Observer\HyvaCheckoutHyvaConfigGenerateBefore"/>
     </event>
-
 </config>
